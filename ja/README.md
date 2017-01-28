@@ -2,6 +2,8 @@
 
 Annictの開発に関するドキュメントをまとめています。
 
+**注意:** このドキュメントは現在開発中の[V2](https://github.com/annict/annict/tree/v2)向けになります。
+現在公開中のバージョン向けのドキュメントは[WikiHub](https://annict.wikihub.io/)にあります。
 
 ## ドキュメントの編集について
 
