@@ -1,5 +1,8 @@
 # Annict Docs
 
-## Languages
+Annictの開発に関するドキュメントをまとめています。
 
-- [Japanese](ja/)
+
+## リソース
+
+- [API](api/)
