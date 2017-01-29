@@ -10,7 +10,7 @@ Annict APIが提供するリソースにどのような権限でアクセスす�
 
 ## GET /oauth/authorize
 
-指定した権限でリソースにアクセスすることの許可を求めるページが表示されます。
+アクセス許可を求めるページが表示されます。
 
 ### パラメータ
 
@@ -37,7 +37,7 @@ GET /oauth/authorize?client_id=f96b162be2c54b467f7583a0e141d0df99bf16318146f9bf5
 
 # アクセストークンを取得する
 
-認可後に取得した認証コードを使用してアクセストークンを取得します。
+認可後に取得した認証コードを使用して、アクセストークンを取得します。
 
 ## POST /oauth/token
 
@@ -122,13 +122,17 @@ Content-Type: application/json; charset=utf-8
 
 | 名前 | 概要 |
 | --- | --- |
+| client_id | **[必須]** クライアントID。 |
+| client_secret | **[必須]** 作成したクライアントアプリケーションのシークレットキー。 |
 | token | **[必須]** アクセストークンを指定します。 |
 
 ### リクエスト例
 
 ```
 $ curl -H "Authorization: Bearer 35372b2d866222ed33e355c36d86be498076e037a810ee72963819339c781f32" \
--F token=35372b2d866222ed33e355c36d86be498076e037a810ee72963819339c781f32
+-F client_id=f96b162be2c54b467f7583a0e141d0df99bf16318146f9bf53116d82b145fde6 \
+-F client_secret=9bef7fc39d5d6210ecaaa34d8ccfe5e7a10babd2ebad90876307d71a8e14de69 \
+-F token=35372b2d866222ed33e355c36d86be498076e037a810ee72963819339c781f32 \
 -X POST https://api.annict.com/oauth/revoke
 ```
 

@@ -20,7 +20,7 @@ GET https://api.annict.com/v1/works
 
 # 認可 / 認証方法
 
-Annict APIではリソースへの認可や認証に「OAuth 2.0」を使用しています。OAuth 2.0については [RFC 6749](https://tools.ietf.org/html/rfc6749) をご覧ください。
+Annict APIではリソースへの認可や認証にOAuth 2.0を使用しています。OAuth 2.0については [RFC 6749](https://tools.ietf.org/html/rfc6749) をご覧ください。
 
 
 # アクセストークンの付与
@@ -62,7 +62,7 @@ $ curl -X GET http://api.annict.com/v1/works?access_token=35372b2d866222ed33e355
 }
 ```
 
-アクセストークンの取得方法は [認証](https://annict.wikihub.io/wiki/api/authentication) ページに記載しています。
+アクセストークンの取得方法は [認証](api/v1/authentication.md) ページに記載しています。
 
 
 # HTTPステータスコード
@@ -86,6 +86,7 @@ Annict APIでは下記の条件でHTTPステータスコードを返します。
 # ページネーション
 
 作品一覧など、複数のリソースを返すAPIにはページを指定して取得するリソースを分割するようになっています。ページを指定する場合は `page` パラメータを、1ページあたり何件のリソースを取得するかを指定する場合は `per_page` パラメータを使用します。デフォルト値などの情報は各エンドポイントのドキュメントに記載しています。
+
 レスポンスデータには `total_count`, `next_page`, `prev_page` の3つのフィールドが付加されます。`total_count` にはページを跨いだ全リソース数、`next_page`, `prev_page` には次のページ数、前のページ数が格納されています。次のページ、前のページが存在しない場合は `null` が格納されます。
 以下は全8件の作品情報の4ページ目を2件取得する例です。5ページ目は存在しないため、`next_page` が `null` になっています。
 
