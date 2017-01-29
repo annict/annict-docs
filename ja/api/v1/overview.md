@@ -62,7 +62,7 @@ $ curl -X GET http://api.annict.com/v1/works?access_token=35372b2d866222ed33e355
 }
 ```
 
-アクセストークンの取得方法は [認証](api/v1/authentication.md) ページに記載しています。
+アクセストークンの取得方法は [認証](authentication.md) ページに記載しています。
 
 
 # HTTPステータスコード
