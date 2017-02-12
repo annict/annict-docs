@@ -2,7 +2,6 @@
 
 Annictの開発に関するドキュメントをまとめています。
 
-
 ## ドキュメントの編集について
 
 このドキュメントは、GitHubのリポジトリ [annict/docs](https://github.com/annict/docs) で管理しているMarkdownファイルを、[GitBook](https://www.gitbook.com)を利用してHTMLに変換し表示しています。
