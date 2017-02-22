@@ -12,6 +12,7 @@ Annictに登録されているエピソード情報を取得することがで�
 | sort_number | ソート用の番号。話数でソートすると正しく並べられないケースがあるため、このフィールドが存在します。 |
 | title | サブタイトル |
 | records_count | 記録数 |
+| record_comments_count | 感想付きの記録数 |
 | work | このエピソードが紐づく作品情報。取得できるフィールドは [Works](https://annict.wikihub.io/wiki/api/works) と同じです。 |
 | prev_episode | このエピソードの前のエピソード情報。取得できるフィールドは同じです。 |
 | next_episode | このエピソードの次のエピソード情報。取得できるフィールドは同じです。 |
@@ -46,6 +47,7 @@ $ curl -X GET https://api.annict.com/v1/episodes?access_token=(access_token)
       "sort_number": 2,
       "title": "殺戮の夢幻迷宮",
       "records_count": 0,
+      "record_comments_count": 0,
       "work": {
         "id": 3831,
         "title": "NEWドリームハンター麗夢",
@@ -69,7 +71,8 @@ $ curl -X GET https://api.annict.com/v1/episodes?access_token=(access_token)
         "number_text": "第1話",
         "sort_number": 1,
         "title": " 夢の騎士達",
-        "records_count": 0
+        "records_count": 0,
+        "record_comments_count": 0
       },
       "next_episode": null
     },

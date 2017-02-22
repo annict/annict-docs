@@ -62,7 +62,8 @@ $ curl -X POST https://api.annict.com/v1/me/records?episode_id=5013&comment=あ�
     "number_text": "第1羽",
     "sort_number": 1,
     "title": "ひと目で尋常でないもふもふだと見抜いたよ",
-    "records_count": 103
+    "records_count": 103,
+    "record_comments_count": 3
   }
 }
 ```
@@ -132,7 +133,8 @@ $ curl -X PATCH https://api.annict.com/v1/me/records/1016?comment=あぁ^～心�
     "number_text": "第1羽",
     "sort_number": 1,
     "title": "ひと目で尋常でないもふもふだと見抜いたよ",
-    "records_count": 103
+    "records_count": 103,
+    "record_comments_count": 3
   }
 }
 ```

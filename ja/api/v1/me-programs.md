@@ -72,7 +72,8 @@ $ curl -X GET https://api.annict.com/v1/me/programs?sort_started_at=desc&filter_
         "number_text": "第5話",
         "sort_number": 50,
         "title": "使い魔の活用法",
-        "records_count": 0
+        "records_count": 0,
+        "record_comments_count": 0
       }
     },
 ...

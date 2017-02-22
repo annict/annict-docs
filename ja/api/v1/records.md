@@ -79,7 +79,8 @@ $ curl -X GET https://api.annict.com/v1/records?filter_episode_id=74669&access_t
         "number_text": "第壱話",
         "sort_number": 10,
         "title": "クマと少女 お別れの時",
-        "records_count": 183
+        "records_count": 183,
+        "record_comments_count": 53
       }
     },
 ...
