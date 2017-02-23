@@ -24,6 +24,7 @@
 | fields | レスポンスボディに含まれるデータのフィールドを絞り込みます。 | fields=id,title |
 | filter_ids | 記録を記録IDで絞り込みます。 | filter_ids=1,2,3 |
 | filter_episode_id | 記録をエピソードIDで絞り込みます。 | filter_episode_id=1111 |
+| filter_has_record_comment | 記録を感想のあるなしで絞り込みます。感想付きの記録のみに絞り込むときは `true` を、感想の無い記録のみに絞り込むときは `false` を指定します。| filter_has_record_comment=true |
 | page | ページ数を指定します。 | page=2 |
 | per_page | 1ページに何件取得するかを指定します。デフォルトは `25` 件で、`50` 件まで指定できます。 | per_page=30 |
 | sort_id | 記録を記録IDで並び替えます。`asc` または `desc` が指定できます。 | sort_id=desc |
