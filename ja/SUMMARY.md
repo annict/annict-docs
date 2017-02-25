@@ -8,6 +8,7 @@
   - [/v1/records](api/v1/records.md)
   - [/v1/users](api/v1/users.md)
   - [/v1/following](api/v1/following.md)
+  - [/v1/followers](api/v1/followers.md)
   - [/v1/me](api/v1/me.md)
   - [/v1/me/statuses](api/v1/me-statuses.md)
   - [/v1/me/records](api/v1/me-records.md)
