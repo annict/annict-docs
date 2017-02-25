@@ -14,7 +14,7 @@
 | comments_count | コメントされた数 |
 | created_at | 記録された日時 |
 | user | この記録をした利用者の情報 |
-| work | この記録が紐づく作品情報。取得できるフィールドは [Works](https://annict.wikihub.io/wiki/api/works) と同じです。 |
+| work | この記録が紐づく作品情報。取得できるフィールドは [Works](works.md) と同じです。 |
 | episode | この記録が紐づくエピソード情報 |
 
 ## パラメータ
@@ -24,6 +24,7 @@
 | fields | レスポンスボディに含まれるデータのフィールドを絞り込みます。 | fields=id,title |
 | filter_ids | 記録を記録IDで絞り込みます。 | filter_ids=1,2,3 |
 | filter_episode_id | 記録をエピソードIDで絞り込みます。 | filter_episode_id=1111 |
+| filter_has_record_comment | 記録を感想のあるなしで絞り込みます。感想付きの記録のみに絞り込むときは `true` を、感想の無い記録のみに絞り込むときは `false` を指定します。| filter_has_record_comment=true |
 | page | ページ数を指定します。 | page=2 |
 | per_page | 1ページに何件取得するかを指定します。デフォルトは `25` 件で、`50` 件まで指定できます。 | per_page=30 |
 | sort_id | 記録を記録IDで並び替えます。`asc` または `desc` が指定できます。 | sort_id=desc |
@@ -53,6 +54,8 @@ $ curl -X GET https://api.annict.com/v1/records?filter_episode_id=74669&access_t
         "name": "Koji Shimba",
         "description": "アニメ好きが高じてこのサービスを作りました。聖地巡礼を年に数回しています。",
         "url": "http://shimba.co",
+        "avatar_url": "https://api-assets.annict.com/paperclip/profiles/1/tombo_avatars/master/d8af7adc8122c96ba7639218fd8b5ede332d42f2.jpg?1431357292",
+        "background_image_url": "https://api-assets.annict.com/paperclip/profiles/1/tombo_background_images/master/ee15d577fb2f2d61bdaf700cfab894b286a5762d.jpg?1486753229",
         "records_count": 1906,
         "created_at": "2014-03-02T15:38:40.000Z"
       },
@@ -79,7 +82,8 @@ $ curl -X GET https://api.annict.com/v1/records?filter_episode_id=74669&access_t
         "number_text": "第壱話",
         "sort_number": 10,
         "title": "クマと少女 お別れの時",
-        "records_count": 183
+        "records_count": 183,
+        "record_comments_count": 53
       }
     },
 ...

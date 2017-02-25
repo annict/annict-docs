@@ -10,8 +10,8 @@
 | started_at | 放送開始日時 |
 | is_rebroadcast | この放送予定が再放送かどうか。再放送の場合は `true` が、そうでない場合は `false` が格納されています。 |
 | channel | チャンネル情報 |
-| work | この放送予定が紐づく作品情報。取得できるフィールドは [Works](https://annict.wikihub.io/wiki/api/works) と同じです。 |
-| episode | この放送予定が紐づくエピソード情報。取得できるフィールドは [Episodes](https://annict.wikihub.io/wiki/api/episodes) と同じです。 |
+| work | この放送予定が紐づく作品情報。取得できるフィールドは [Works](works.md) と同じです。 |
+| episode | この放送予定が紐づくエピソード情報。取得できるフィールドは [Episodes](episodes.md) と同じです。 |
 
 
 ## パラメータ
@@ -72,7 +72,8 @@ $ curl -X GET https://api.annict.com/v1/me/programs?sort_started_at=desc&filter_
         "number_text": "第5話",
         "sort_number": 50,
         "title": "使い魔の活用法",
-        "records_count": 0
+        "records_count": 0,
+        "record_comments_count": 0
       }
     },
 ...
