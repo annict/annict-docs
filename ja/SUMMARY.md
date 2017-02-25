@@ -6,6 +6,7 @@
   - [/v1/works](api/v1/works.md)
   - [/v1/episodes](api/v1/episodes.md)
   - [/v1/records](api/v1/records.md)
+  - [/v1/users](api/v1/users.md)
   - [/v1/me](api/v1/me.md)
   - [/v1/me/statuses](api/v1/me-statuses.md)
   - [/v1/me/records](api/v1/me-records.md)
