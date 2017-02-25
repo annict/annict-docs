@@ -4,7 +4,11 @@
 
 ## フィールド
 
-[GET /v1/works](https://annict.wikihub.io/wiki/api/works#get-v1-works) のフィールドと同じです。
+[GET /v1/works](https://annict.wikihub.io/wiki/api/works#get-v1-works) のフィールドに加えて、下記のフィールドが存在します。
+
+| 名前 | 概要 |
+| --- | --- |
+| status.kind | ステータスの種類 |
 
 
 ## パラメータ
@@ -47,7 +51,10 @@ $ curl -X GET https://api.annict.com/v1/me/works?access_token=(access_token)
       "twitter_username": "flying_tv",
       "twitter_hashtag": "flyingwitch",
       "episodes_count": 5,
-      "watchers_count": 695
+      "watchers_count": 695,
+      "status": {
+        "kind": "watching"
+      }
     }
   ],
 ...
