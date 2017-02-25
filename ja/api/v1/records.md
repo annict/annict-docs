@@ -14,7 +14,7 @@
 | comments_count | コメントされた数 |
 | created_at | 記録された日時 |
 | user | この記録をした利用者の情報 |
-| work | この記録が紐づく作品情報。取得できるフィールドは [Works](https://annict.wikihub.io/wiki/api/works) と同じです。 |
+| work | この記録が紐づく作品情報。取得できるフィールドは [Works](works.md) と同じです。 |
 | episode | この記録が紐づくエピソード情報 |
 
 ## パラメータ

@@ -13,7 +13,7 @@ Annictに登録されているエピソード情報を取得することがで�
 | title | サブタイトル |
 | records_count | 記録数 |
 | record_comments_count | 感想付きの記録数 |
-| work | このエピソードが紐づく作品情報。取得できるフィールドは [Works](https://annict.wikihub.io/wiki/api/works) と同じです。 |
+| work | このエピソードが紐づく作品情報。取得できるフィールドは [Works](works.md) と同じです。 |
 | prev_episode | このエピソードの前のエピソード情報。取得できるフィールドは同じです。 |
 | next_episode | このエピソードの次のエピソード情報。取得できるフィールドは同じです。 |
 

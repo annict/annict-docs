@@ -4,7 +4,7 @@
 
 ## フィールド
 
-[GET /v1/works](https://annict.wikihub.io/wiki/api/works#get-v1-works) のフィールドに加えて、下記のフィールドが存在します。
+[GET /v1/works](works.md) のフィールドに加えて、下記のフィールドが存在します。
 
 | 名前 | 概要 |
 | --- | --- |
