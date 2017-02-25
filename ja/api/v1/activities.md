@@ -1,10 +1,43 @@
-# GET /v1/me/following_activities
+# GET /v1/activities
 
-自分がフォローしているユーザのアクティビティを取得することができます。
+アクティビティを取得することができます。
 
 ## フィールド
 
-取得できるフィールドは [Activities](activities.md) と同じです。
+### アクティビティ共通
+
+| 名前 | 概要 |
+| --- | --- |
+| id | アクティビティID |
+| user | ユーザ情報。取得できるフィールドは [Users](users.md) と同じです。 |
+| work | 作品情報。取得できるフィールドは [Works](works.md) と同じです。 |
+| action | アクティビティの種類。`create_record` (記録), `create_multiple_records` (一括記録), `create_status` (ステータス変更) の3種類が存在します。 |
+| created_at | アクティビティ作成日時 |
+
+上記フィールド以外に、 `action` ごとに異なるフィールドが存在します。
+
+
+### status: create_record
+
+| 名前 | 概要 |
+| --- | --- |
+| episode | 記録されたエピソード情報。取得できるフィールドは [Episodes](episodes.md) と同じです。 |
+| record | 記録情報。取得できるフィールドは [Records](records.md) と同じです。 |
+
+
+### status: create_multiple_records
+
+| 名前 | 概要 |
+| --- | --- |
+| multiple_record.episode | 記録されたエピソード情報。取得できるフィールドは [Episodes](episodes.md) と同じです。 |
+| multiple_record.record | 記録情報。取得できるフィールドは [Records](records.md) と同じです。 |
+
+
+### status: create_status
+
+| 名前 | 概要 |
+| --- | --- |
+| status.kind | ステータスの種類 |
 
 
 ## パラメータ
@@ -12,8 +45,8 @@
 | 名前 | 概要 | 使用例 |
 | --- | --- | --- |
 | fields | レスポンスボディに含まれるデータのフィールドを絞り込みます。 | fields=id,title |
-| filter_actions | アクションで絞り込みます。 | filter_actions=create_record,create_multiple_records |
-| filter_muted | ミュート機能でミュートしているユーザを除外するかどうかを指定します。 `true` で除外、 `false` で除外しないようにできます。デフォルトは `true` (除外する) です。 | filter_muted=false |
+| filter_user_id | ユーザIDで絞り込みます。 | filter_user_id=2 |
+| filter_username | ユーザ名で絞り込みます。 | filter_username=shimbaco |
 | page | ページ数を指定します。 | page=2 |
 | per_page | 1ページに何件取得するかを指定します。デフォルトは `25` 件で、`50` 件まで指定できます。 | per_page=30 |
 | sort_id | IDで並び替えます。`asc` または `desc` が指定できます。 | sort_id=desc |
@@ -22,11 +55,11 @@
 ## リクエスト例
 
 ```
-$ curl -X GET https://api.annict.com/v1/me/following_activities?access_token=(access_token)&sort_id=desc&per_page=1
+$ curl -X GET https://api.annict.com/v1/activities?access_token=(access_token)&sort_id=desc&filter_username=shimbaco&per_page=1
 ```
 
 ```json
-{
+
   "activities": [
     {
       "id": 1504708,
@@ -80,7 +113,7 @@ $ curl -X GET https://api.annict.com/v1/me/following_activities?access_token=(ac
       }
     }
   ],
-  "total_count": 138030,
+  "total_count": 3705,
   "next_page": 2,
   "prev_page": null
 }
