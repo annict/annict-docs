@@ -36,6 +36,8 @@ $ curl -X POST https://api.annict.com/v1/me/records?episode_id=5013&comment=あ�
     "name": "Koji Shimba",
     "description": "",
     "url": null,
+    "avatar_url": "https://api-assets.annict.com/paperclip/profiles/1/tombo_avatars/master/d8af7adc8122c96ba7639218fd8b5ede332d42f2.jpg?1431357292",
+    "background_image_url": "https://api-assets.annict.com/paperclip/profiles/1/tombo_background_images/master/ee15d577fb2f2d61bdaf700cfab894b286a5762d.jpg?1486753229",
     "records_count": 123,
     "created_at": "2016-05-03T19:06:59.929Z"
   },
@@ -107,6 +109,8 @@ $ curl -X PATCH https://api.annict.com/v1/me/records/1016?comment=あぁ^～心�
     "name": "Koji Shimba",
     "description": "",
     "url": null,
+    "avatar_url": "https://api-assets.annict.com/paperclip/profiles/1/tombo_avatars/master/d8af7adc8122c96ba7639218fd8b5ede332d42f2.jpg?1431357292",
+    "background_image_url": "https://api-assets.annict.com/paperclip/profiles/1/tombo_background_images/master/ee15d577fb2f2d61bdaf700cfab894b286a5762d.jpg?1486753229",
     "records_count": 1234,
     "created_at": "2016-05-03T19:06:59.929Z"
   },

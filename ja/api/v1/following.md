@@ -34,6 +34,8 @@ $ curl -X GET https://api.annict.com/v1/following?access_token=(access_token)&fi
       "name": "岩永勇輝 (Creasty)",
       "description": "Web やってる大学生\nプログラミングとかデザインとか\n価値を生み出せるようになりたい\n\nアルバイト@FICC\n\nC / Obj-C / Ruby / Haskell / PHP / CoffeeScript / VimScript / Photoshop / Illustrator",
       "url": null,
+      "avatar_url": "https://api-assets.annict.com/paperclip/profiles/2/tombo_avatars/master/cc301ca5c5e13399144c79daa4e4727b783676de.jpg?1428129519",
+      "background_image_url": "https://api-assets.annict.com/paperclip/profiles/2/tombo_avatars/master/cc301ca5c5e13399144c79daa4e4727b783676de.jpg?1428129519",
       "records_count": 0,
       "created_at": "2014-03-04T09:32:25.000Z"
     },
@@ -43,11 +45,13 @@ $ curl -X GET https://api.annict.com/v1/following?access_token=(access_token)&fi
       "name": "PATAIJI",
       "description": "FICC inc.ベースやってます。カブに乗ってます。AWSすごい良い。Railsすごい楽。",
       "url": null,
+      "avatar_url": "https://api-assets.annict.com/paperclip/profiles/3/tombo_avatars/master/33ce537a4cf38f71b509f295f2afa3291c281dcf.jpg?1428129521",
+      "background_image_url": "https://api-assets.annict.com/paperclip/profiles/3/tombo_avatars/master/33ce537a4cf38f71b509f295f2afa3291c281dcf.jpg?1428129521",
       "records_count": 0,
       "created_at": "2014-03-04T09:32:28.000Z"
     }
   ],
-  "total_count": 4214,
+  "total_count": 274,
   "next_page": 2,
   "prev_page": null
 }

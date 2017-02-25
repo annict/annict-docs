@@ -34,6 +34,8 @@ $ curl -X GET https://api.annict.com/v1/followers?access_token=(access_token)&fi
       "name": "akirafukuoka",
       "description": "FICC inc. http://www.ficc.jp  クリエイティブディレクター。RAW-Fi http://raw-fi.com  @raw_fi もよろしくお願いします。",
       "url": null,
+      "avatar_url": "https://api-assets.annict.com/paperclip/profiles/6/tombo_avatars/master/480862747fc5f7152a031e24f0c0374dc71c539a.jpg?1431596794",
+      "background_image_url": "https://api-assets.annict.com/paperclip/profiles/6/tombo_background_images/master/7e258e0189e9ee38f4dc0c57b2c9f6b39dd2cd95.jpg?1431596795",
       "records_count": 260,
       "created_at": "2014-03-10T04:11:54.000Z"
     },
@@ -43,6 +45,8 @@ $ curl -X GET https://api.annict.com/v1/followers?access_token=(access_token)&fi
       "name": "Daisuke Nagai",
       "description": "歌って踊れるWebデザイナーです",
       "url": null,
+      "avatar_url": "https://api-assets.annict.com/paperclip/profiles/7/tombo_avatars/master/cd7b66919fea1952e63855632665812839e2a394.jpg?1428129527",
+      "background_image_url": "https://api-assets.annict.com/paperclip/profiles/7/tombo_avatars/master/cd7b66919fea1952e63855632665812839e2a394.jpg?1428129527",
       "records_count": 739,
       "created_at": "2014-03-10T04:11:55.000Z"
     }
