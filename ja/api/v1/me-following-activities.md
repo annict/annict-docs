@@ -11,7 +11,7 @@
 
 | 名前 | 概要 | 使用例 |
 | --- | --- | --- |
-| fields | レスポンスボディに含まれるデータのフィールドを絞り込みます。 | fields=id,title |
+| fields | レスポンスボディに含まれるデータのフィールドを絞り込みます。 | fields=id,work.title |
 | filter_actions | アクションで絞り込みます。 | filter_actions=create_record,create_multiple_records |
 | filter_muted | ミュート機能でミュートしているユーザを除外するかどうかを指定します。 `true` で除外、 `false` で除外しないようにできます。デフォルトは `true` (除外する) です。 | filter_muted=false |
 | page | ページ数を指定します。 | page=2 |

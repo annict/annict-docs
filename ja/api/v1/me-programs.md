@@ -18,7 +18,7 @@
 
 | 名前 | 概要 | 使用例 |
 | --- | --- | --- |
-| fields | レスポンスボディに含まれるデータのフィールドを絞り込みます。 | fields=id,title |
+| fields | レスポンスボディに含まれるデータのフィールドを絞り込みます。 | fields=id,episode.title |
 | filter_ids | 放送予定を放送予定IDで絞り込みます。 | filter_ids=1,2,3 |
 | filter_channel_ids | 放送予定をチャンネルIDで絞り込みます。 | filter_channel_ids=1,2,3 |
 | filter_work_ids | 放送予定を作品IDで絞り込みます。 | filter_work_ids=1,2,3 |

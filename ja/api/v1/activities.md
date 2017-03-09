@@ -44,7 +44,7 @@
 
 | 名前 | 概要 | 使用例 |
 | --- | --- | --- |
-| fields | レスポンスボディに含まれるデータのフィールドを絞り込みます。 | fields=id,title |
+| fields | レスポンスボディに含まれるデータのフィールドを絞り込みます。 | fields=id,work.title |
 | filter_user_id | ユーザIDで絞り込みます。 | filter_user_id=2 |
 | filter_username | ユーザ名で絞り込みます。 | filter_username=shimbaco |
 | page | ページ数を指定します。 | page=2 |
