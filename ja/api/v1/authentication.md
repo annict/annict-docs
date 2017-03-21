@@ -1,18 +1,29 @@
-Annict APIからリソースにアクセスするには、OAuth 2による認可と認証を行う必要があります。
+Annict APIからリソースにアクセスするにはアクセストークンが必要になります。
+アクセストークンは以下の2種類の方法で取得することができます。
 
-# クライアントアプリケーションを作成する
+1. 「個人用アクセストークン」を作成する
+1. OAuth認証をする
+
+# 「個人用アクセストークン」を作成する
+
+個人用アクセストークンを作成することで、OAuth認証をせずにアクセストークンを取得することができます。
+アクセストークンは「[アプリケーション](https://annict.com/settings/apps)」ページから作成することができます。
+
+# OAuth認証をする
+
+## クライアントアプリケーションを作成する
 
 OAuthで使用するクライアントIDなどを保持するクライアントアプリケーションを作成します。クライアントアプリケーションは https://annict.com/oauth/applications から作成することができます。
 
-# 認可のリクエストを送る
+## 認可のリクエストを送る
 
 Annict APIが提供するリソースにどのような権限でアクセスするかをAnnictに伝えるため、認可のためのリクエストを送る必要があります。
 
-## GET /oauth/authorize
+### GET /oauth/authorize
 
 アクセス許可を求めるページが表示されます。
 
-### パラメータ
+#### パラメータ
 
 | 名前 | 概要 |
 | --- | --- |
@@ -21,7 +32,7 @@ Annict APIが提供するリソースにどのような権限でアクセスす�
 | redirect_uri | **[必須]** 認可後のコールバックでどのURIに返るかを指定します。`urn:ietf:wg:oauth:2.0:oob` を指定した場合、認可後にリダイレクトせず認証コードが表示されます。 |
 | scope | リソースにアクセスする際の権限を指定します。デフォルトは `read` (読み込み専用) になっています。書き込み権限も付与したい場合は `read write` を指定してください。 |
 
-### リクエスト例
+#### リクエスト例
 
 下記の例では `redirect_uri` に `urn:ietf:wg:oauth:2.0:oob` が指定されているため、認可後のページに認証コードが表示されます。
 
@@ -35,15 +46,15 @@ GET /oauth/authorize?client_id=f96b162be2c54b467f7583a0e141d0df99bf16318146f9bf5
 GET /oauth/authorize?client_id=f96b162be2c54b467f7583a0e141d0df99bf16318146f9bf53116d82b145fde6&response_type=code&redirect_uri=http://example.com&scope=read+write
 ```
 
-# アクセストークンを取得する
+## アクセストークンを取得する
 
 認可後に取得した認証コードを使用して、アクセストークンを取得します。
 
-## POST /oauth/token
+### POST /oauth/token
 
 アクセストークンを発行します。
 
-### パラメータ
+#### パラメータ
 
 | 名前 | 概要 |
 | --- | --- |
@@ -53,7 +64,7 @@ GET /oauth/authorize?client_id=f96b162be2c54b467f7583a0e141d0df99bf16318146f9bf5
 | redirect_uri | **[必須]** クライアントアプリケーションを作成したときに入力したコールバックURIを指定します。 |
 | code | **[必須]** 認可後に取得した認証コードを指定します。 |
 
-### リクエスト例
+#### リクエスト例
 
 ```
 $ curl -F client_id=f96b162be2c54b467f7583a0e141d0df99bf16318146f9bf53116d82b145fde6 \
@@ -64,7 +75,7 @@ $ curl -F client_id=f96b162be2c54b467f7583a0e141d0df99bf16318146f9bf53116d82b145
 -X POST https://api.annict.com/oauth/token
 ```
 
-### レスポンス例
+#### レスポンス例
 
 ```
 HTTP/1.1 200 OK
@@ -80,20 +91,20 @@ ontent-Type: application/json; charset=utf-8
 }
 ```
 
-# アクセストークンの情報を取得する
+## アクセストークンの情報を取得する
 
-## GET /oauth/token/info
+### GET /oauth/token/info
 
 アクセストークンの情報を取得します。`Authorization` ヘッダにアクセストークンを渡してリクエストを送ります。
 
-### リクエスト例
+#### リクエスト例
 
 ```
 $ curl -H "Authorization: Bearer 35372b2d866222ed33e355c36d86be498076e037a810ee72963819339c781f32" \
 -X GET https://api.annict.com/oauth/token/info
 ```
 
-### レスポンス例
+#### レスポンス例
 
 ```
 HTTP/1.1 200 OK
@@ -112,13 +123,13 @@ Content-Type: application/json; charset=utf-8
 }
 ```
 
-# アクセストークンを失効させる
+## アクセストークンを失効させる
 
-## POST /oauth/revoke
+### POST /oauth/revoke
 
 アクセストークンを失効させます。`Authorization` ヘッダと `token` パラメータを渡してリクエストを送ります。
 
-### パラメータ
+#### パラメータ
 
 | 名前 | 概要 |
 | --- | --- |
@@ -126,7 +137,7 @@ Content-Type: application/json; charset=utf-8
 | client_secret | **[必須]** 作成したクライアントアプリケーションのシークレットキー。 |
 | token | **[必須]** アクセストークンを指定します。 |
 
-### リクエスト例
+#### リクエスト例
 
 ```
 $ curl -H "Authorization: Bearer 35372b2d866222ed33e355c36d86be498076e037a810ee72963819339c781f32" \
@@ -136,7 +147,7 @@ $ curl -H "Authorization: Bearer 35372b2d866222ed33e355c36d86be498076e037a810ee7
 -X POST https://api.annict.com/oauth/revoke
 ```
 
-### レスポンス例
+#### レスポンス例
 
 ```
 HTTP/1.1 200 OK
