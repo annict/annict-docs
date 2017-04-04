@@ -20,7 +20,7 @@ Annictに登録されている作品情報を取得することができます�
 | twitter_username | 公式Twitterアカウントのusername |
 | twitter_hashtag | Twitterの作品に関するハッシュタグ |
 | images.facebook.og_image_url | `official_site_url` のページで取得できる `og:image` のURL |
-| images.twitter.(mini|normal|bigger|original)_avatar_url | Twitterアカウントのアバター画像。`mini`, `normal`, `bigger`, `original` の4種類のサイズがあります |
+| images.twitter.(mini/normal/bigger/original)_avatar_url | Twitterアカウントのアバター画像。`mini`, `normal`, `bigger`, `original` の4種類のサイズがあります |
 | images.twitter.image_url | `official_site_url` のページで取得できる `twitter:image` のURL |
 | images.recommended_url | `facebook.og_image_url`, `twitter.bigger_avatar_url`, `twitter.image_url` のうち、解像度が一番大きい画像のURL。扱いやすい画像のURLが高確率で格納されるプロパティになります |
 | episodes_count | エピソード数 |
