@@ -35,14 +35,14 @@ Annict APIを通じてリソースを取得するためには、OAuthプロバ�
 
 ```
 $ curl -H "Authorization: Bearer 35372b2d866222ed33e355c36d86be498076e037a810ee72963819339c781f32" \
--X GET http://api.annict.com/v1/works
+-X GET https://api.annict.com/v1/works
 ```
 
 
 ## リクエスト例 (URIのパラメータに付与する)
 
 ```
-$ curl -X GET http://api.annict.com/v1/works?access_token=35372b2d866222ed33e355c36d86be498076e037a810ee72963819339c781f32
+$ curl -X GET https://api.annict.com/v1/works?access_token=35372b2d866222ed33e355c36d86be498076e037a810ee72963819339c781f32
 ```
 
 
