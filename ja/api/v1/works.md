@@ -19,6 +19,10 @@ Annictに登録されている作品情報を取得することができます�
 | wikipedia_url | WikipediaのURL |
 | twitter_username | 公式Twitterアカウントのusername |
 | twitter_hashtag | Twitterの作品に関するハッシュタグ |
+| images.facebook.og_image_url | `official_site_url` のページで取得できる `og:image` のURL |
+| images.twitter.(mini|normal|bigger|original)_avatar_url | Twitterアカウントのアバター画像。`mini`, `normal`, `bigger`, `original` の4種類のサイズがあります |
+| images.twitter.image_url | `official_site_url` のページで取得できる `twitter:image` のURL |
+| images.recommended_url | `facebook.og_image_url`, `twitter.bigger_avatar_url`, `twitter.image_url` のうち、解像度が一番大きい画像のURL。扱いやすい画像のURLが高確率で格納されるプロパティになります |
 | episodes_count | エピソード数 |
 | watchers_count | 見てる / 見たい / 見た人の数 |
 
@@ -59,6 +63,19 @@ $ curl -X GET https://api.annict.com/v1/works?access_token=(access_token)
       "wikipedia_url": "http://ja.wikipedia.org/wiki/SHIROBAKO",
       "twitter_username": "shirobako_anime",
       "twitter_hashtag": "musani",
+      "images": {
+        "recommended_url": "http://shirobako-anime.com/images/ogp.jpg",
+        "facebook": {
+          "og_image_url": "http://shirobako-anime.com/images/ogp.jpg"
+        },
+        "twitter": {
+          "mini_avatar_url": "https://twitter.com/shirobako_anime/profile_image?size=mini",
+          "normal_avatar_url": "https://twitter.com/shirobako_anime/profile_image?size=normal",
+          "bigger_avatar_url": "https://twitter.com/shirobako_anime/profile_image?size=bigger",
+          "original_avatar_url": "https://twitter.com/shirobako_anime/profile_image?size=original",
+          "image_url": ""
+        }
+      },
       "episodes_count": 24,
       "watchers_count": 1254
     },
