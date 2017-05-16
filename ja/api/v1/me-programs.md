@@ -22,8 +22,8 @@
 | filter_ids | 放送予定を放送予定IDで絞り込みます。 | filter_ids=1,2,3 |
 | filter_channel_ids | 放送予定をチャンネルIDで絞り込みます。 | filter_channel_ids=1,2,3 |
 | filter_work_ids | 放送予定を作品IDで絞り込みます。 | filter_work_ids=1,2,3 |
-| filter_started_at_gt | 放送予定を放送開始日時で絞り込みます。指定した日時以降の放送予定が取得できます。 | filter_started_at_gt=2016/05/06 21:10 |
-| filter_started_at_lt | 放送予定を放送開始日時で絞り込みます。指定した日時以前の放送予定が取得できます。 | filter_started_at_lt=2016/05/06 21:10 |
+| filter_started_at_gt | 放送予定を放送開始日時で絞り込みます。指定した日時以降の放送予定が取得できます。また、指定した日時のタイムゾーンはUTCとして解釈されます。 | filter_started_at_gt=2016/05/06 21:10 |
+| filter_started_at_lt | 放送予定を放送開始日時で絞り込みます。指定した日時以前の放送予定が取得できます。また、指定した日時のタイムゾーンはUTCとして解釈されます。 | filter_started_at_lt=2016/05/06 21:10 |
 | filter_unwatched | 未視聴の放送予定だけを取得します。 | filter_unwatched=true |
 | filter_rebroadcast | 放送予定を再放送フラグをもとに絞り込みます。`true` を渡すと再放送だけが、`false` を渡すと再放送以外の放送予定が取得できます。 | filter_rebroadcast=true |
 | page | ページ数を指定します。 | page=2 |
