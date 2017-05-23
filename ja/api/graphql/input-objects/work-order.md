@@ -2,6 +2,6 @@
 
 ## Input Fields
 
-### field: [WorkOrderField!](/api/enums/work-order-field.md)
+### field: [WorkOrderField!](../enums/work-order-field.md)
 
-### direction: [OrderDirection!](/api/enums/order-direction.md)
+### direction: [OrderDirection!](../enums/order-direction.md)
