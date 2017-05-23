@@ -21,7 +21,7 @@
 
 | 名前 | 概要 |
 | --- | --- |
-| episode | 記録されたエピソード情報。取得できるフィールドは [Episodes](/ja/api/v1/episodes.md) と同じです。 |
+| episode | 記録されたエピソード情報。取得できるフィールドは [Episodes](/api/v1/episodes.md) と同じです。 |
 | record | 記録情報。取得できるフィールドは [Records](records.md) と同じです。 |
 
 
