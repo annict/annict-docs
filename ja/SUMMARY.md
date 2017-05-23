@@ -3,6 +3,7 @@
 ### GraphQL API (Beta)
 
 - [概要](api/graphql/overview.md)
+- [Query](api/graphql/query.md)
 
 
 ### REST API
