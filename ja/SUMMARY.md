@@ -25,3 +25,7 @@
 - [/v1/me/works](api/v1/me-works.md)
 - [/v1/me/programs](api/v1/me-programs.md)
 - [/v1/me/following_activities](api/v1/me-following-activities.md)
+
+<div style="display: none;">
+- [Work](/api/graphql/objects/work.md)
+</div>
