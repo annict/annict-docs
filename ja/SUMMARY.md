@@ -5,6 +5,7 @@
 - [概要](api/graphql/overview.md)
 - [Query](api/graphql/query.md)
 - [Objects](api/graphql/objects/README.md)
+  - [User](/api/graphql/objects/user.md)
 
 
 ### REST API
