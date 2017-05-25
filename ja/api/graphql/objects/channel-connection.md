@@ -2,6 +2,6 @@
 
 ## Fields
 
-### edges: [[ChannelEdge](/api/graphql/objects/channel-edge.md)]
+#### edges: [[ChannelEdge](/api/graphql/objects/channel-edge.md)]
 
-### pageInfo: [PageInfo](/api/graphql/objects/page-info.md)!
+#### pageInfo: [PageInfo](/api/graphql/objects/page-info.md)!

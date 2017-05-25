@@ -2,6 +2,6 @@
 
 ## Fields
 
-### cursor: [[String](/api/graphql/scalars/string.md)]!
+#### cursor: [[String](/api/graphql/scalars/string.md)]!
 
-### node: [Channel](/api/graphql/objects/channel.md)
+#### node: [Channel](/api/graphql/objects/channel.md)

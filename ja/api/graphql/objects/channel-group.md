@@ -7,6 +7,6 @@
 
 ## Fields
 
-### annictId: [Int](/api/graphql/scalars/int.md)!
+#### annictId: [Int](/api/graphql/scalars/int.md)!
 
-### channels: [ChannelConnection]()
+#### channels: [ChannelConnection]()

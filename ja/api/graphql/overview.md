@@ -40,7 +40,7 @@ graphiql-appやAnnictのGraphQL APIからのデータ取得方法をQiitaにま�
 
 ## よくありそうな質問
 
-### 「Annict ID」とは？
+#### 「Annict ID」とは？
 
 このGraphQL APIドキュメントにはよく「Annict ID」という単語が出てきます。
 Annict IDとは、Annictのデータベース内の各テーブルに存在する固有のIDになります。

@@ -2,7 +2,7 @@
 
 ## Connections
 
-### searchWorks: [WorkConnection](/api/graphql/objects/work-connection.md)
+#### searchWorks: [WorkConnection](/api/graphql/objects/work-connection.md)
 
 各種条件に該当する作品を返します。
 
@@ -20,7 +20,7 @@
 
 ## Fields
 
-### node: [Node](/api/graphql/interfaces/node.md)
+#### node: [Node](/api/graphql/interfaces/node.md)
 
 指定したIDでオブジェクトを1つ返します。
 
@@ -29,7 +29,7 @@
 | id | [ID](/api/graphql/scalars/id.md)! | オブジェクトのID |
 
 
-### nodes: [[Node](/api/graphql/interfaces/node.md)]!
+#### nodes: [[Node](/api/graphql/interfaces/node.md)]!
 
 指定した複数のIDでオブジェクトを返します。
 
@@ -38,7 +38,7 @@
 | ids | [[ID](/api/graphql/scalars/id.md)!]! | オブジェクトのID |
 
 
-### user: [User](/api/graphql/objects/user.md)
+#### user: [User](/api/graphql/objects/user.md)
 
 指定した `username` でオブジェクトを1つ返します。
 
@@ -47,6 +47,6 @@
 | username | [String](/api/graphql/scalars/string.md)! | ユーザ名 |
 
 
-### viewer: [User](/api/graphql/objects/user.md)
+#### viewer: [User](/api/graphql/objects/user.md)
 
 アクセストークンを生成したユーザ (APIを利用している本人) を返します。
