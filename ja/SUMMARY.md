@@ -66,7 +66,7 @@
   - [Int](/api/graphql/scalars/int.md)
   - [String](/api/graphql/scalars/string.md)
 - Unions
-  - [ActivityItem](/api/graphql/scalars/activity-item.md)
+  - [ActivityItem](/api/graphql/unions/activity-item.md)
 
 
 ### REST API

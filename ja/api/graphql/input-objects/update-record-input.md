@@ -12,4 +12,8 @@
 
 #### shareTwitter: [Boolean](/api/graphql/scalars/boolean.md)
 
+Twitterにシェアするかどうか。
+
 #### shareFacebook: [Boolean](/api/graphql/scalars/boolean.md)
+
+Facebookにシェアするかどうか。

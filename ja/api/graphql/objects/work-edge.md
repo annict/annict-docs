@@ -1,7 +1,7 @@
-# RecordEdge
+# WorkEdge
 
 ## Fields
 
 #### cursor: [String](/api/graphql/scalars/string.md)!
 
-#### node: [Channel](/api/graphql/objects/record.md)
+#### node: [Work](/api/graphql/objects/work.md)

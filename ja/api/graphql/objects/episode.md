@@ -31,4 +31,4 @@
 
 #### viewerRecordsCount: [Int](/api/graphql/scalars/int.md)!
 
-#### work: [ProgramConnection](/api/graphql/objects/work.md)!
+#### work: [Work](/api/graphql/objects/work.md)!
