@@ -57,6 +57,7 @@
   - [UserEdge](/api/graphql/objects/user-edge.md)
   - [User](/api/graphql/objects/user.md)
   - [WorkConnection](/api/graphql/objects/work-connection.md)
+  - [WorkEdge](/api/graphql/objects/work-edge.md)
   - [WorkImage](/api/graphql/objects/work-image.md)
   - [Work](/api/graphql/objects/work.md)
 - Scalars
