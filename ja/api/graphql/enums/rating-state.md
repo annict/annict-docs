@@ -1,0 +1,7 @@
+# RatingState
+
+## Values
+
+#### GOOD
+
+#### BAD

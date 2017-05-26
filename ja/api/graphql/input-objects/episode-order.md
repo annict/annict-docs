@@ -1,7 +1,7 @@
-# WorkOrder
+# EpisodeOrder
 
 ## Input Fields
 
-#### field: [WorkOrderField](/api/graphql/enums/work-order-field.md)!
+#### field: [EpisodeOrderField](/api/graphql/enums/episode-order-field.md)!
 
 #### direction: [OrderDirection](/api/graphql/enums/order-direction.md)!

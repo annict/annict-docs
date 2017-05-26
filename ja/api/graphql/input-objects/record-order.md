@@ -1,7 +1,7 @@
-# WorkOrder
+# RecordOrder
 
 ## Input Fields
 
-#### field: [WorkOrderField](/api/graphql/enums/work-order-field.md)!
+#### field: [RecordOrderField](/api/graphql/enums/record-order-field.md)!
 
 #### direction: [OrderDirection](/api/graphql/enums/order-direction.md)!
