@@ -101,7 +101,7 @@ query {
 
 #### node: [Node](/api/graphql/interfaces/node.md)
 
-指定したIDでオブジェクトを1つ返します。
+指定したIDに対応するオブジェクトを1つ返します。
 
 | 引数 | 型 | 概要 |
 | --- | --- | --- |
@@ -137,7 +137,7 @@ query {
 
 #### nodes: [[Node](/api/graphql/interfaces/node.md)]!
 
-指定した複数のIDでオブジェクトを返します。
+指定した複数のIDに対応するオブジェクトを返します。
 
 | 引数 | 型 | 概要 |
 | --- | --- | --- |
@@ -178,7 +178,7 @@ query {
 
 #### user: [User](/api/graphql/objects/user.md)
 
-指定した `username` でオブジェクトを1つ返します。
+指定した `username` に対応するオブジェクトを1つ返します。
 
 | 引数 | 型 | 概要 |
 | --- | --- | --- |
