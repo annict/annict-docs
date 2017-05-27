@@ -1,7 +1,5 @@
 # 概要
 
-**AnnictのGraphQL APIはまだ公開されていません。このドキュメントに書かれていることはまだできないのでご注意下さい**
-
 ## エンドポイント
 
 GraphQL APIのエンドポイントは下記になります。
@@ -35,7 +33,9 @@ $ curl https://api.annict.com/graphql \
 以上のようにコマンドラインからリクエストを送信することができますが、GraphQLクライアントを使用したほうが便利です。
 [GraphiQL](https://github.com/graphql/graphiql) というブラウザベースで動作するIDEをElectronでラップした https://github.com/skevy/graphiql-app というアプリがMac等で動かすことができます。
 
-graphiql-appやAnnictのGraphQL APIからのデータ取得方法をQiitaにまとめているので、良ければそちらもご覧ください。
+GraphiQL.appやAnnictのGraphQL APIからのデータ取得方法をQiitaにまとめているので、良ければそちらもご覧ください。
+
+[AnnictのGraphQL APIを使ってアニメデータを取得しよう \- Qiita](http://qiita.com/shimbaco/items/e3f2f8650b08e1e060bd)
 
 
 ## よくありそうな質問
