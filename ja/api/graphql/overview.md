@@ -40,9 +40,12 @@ graphiql-appやAnnictのGraphQL APIからのデータ取得方法をQiitaにま�
 
 ## よくありそうな質問
 
-#### 「Annict ID」とは？
+#### `annictId` と `id` の違いは？
 
 このGraphQL APIドキュメントにはよく「Annict ID」という単語が出てきます。
 Annict IDとは、Annictのデータベース内の各テーブルに存在する固有のIDになります。
 例えば作品「[エロマンガ先生](https://annict.com/works/4714)」のAnnict IDは「4714」になります。
 (Railsがデフォルトで提供するプライマリキーです。)
+
+対して `id` とは全てのオブジェクトにおいて固有のIDになります。
+Annict IDは各テーブルに同じ値が存在し得ますが、`id` には全テーブル内の全データごとに固有の値が設定されています。
