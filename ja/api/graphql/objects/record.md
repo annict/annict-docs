@@ -25,7 +25,7 @@
 
 #### modified: [Boolean](/api/graphql/scalars/boolean.md)!
 
-#### rating: [RatingState](/api/graphql/enums/rating-state.md)
+#### rating: [Float](/api/graphql/scalars/float.md)
 
 #### twitterClickCount: [Int](/api/graphql/scalars/int.md)!
 
