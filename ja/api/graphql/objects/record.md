@@ -27,6 +27,10 @@
 
 #### rating: [Float](/api/graphql/scalars/float.md)
 
+**[非推奨]** 代わりに `ratingState` を参照して下さい。
+
+#### ratingState: [RatingState](/api/graphql/enums/rating-state.md)
+
 #### twitterClickCount: [Int](/api/graphql/scalars/int.md)!
 
 #### updatedAt: [DateTime](/api/graphql/scalars/date-time.md)!

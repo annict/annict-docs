@@ -63,6 +63,7 @@
 - Scalars
   - [Boolean](/api/graphql/scalars/boolean.md)
   - [DateTime](/api/graphql/scalars/date-time.md)
+  - [Float](/api/graphql/scalars/float.md)
   - [ID](/api/graphql/scalars/id.md)
   - [Int](/api/graphql/scalars/int.md)
   - [String](/api/graphql/scalars/string.md)

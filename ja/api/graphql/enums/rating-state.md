@@ -2,6 +2,8 @@
 
 ## Values
 
+#### GREAT
+
 #### GOOD
 
 #### BAD

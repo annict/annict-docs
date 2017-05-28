@@ -10,7 +10,8 @@
 | --- | --- | --- |
 | episode_id | **[必須]** エピソードID | 1234 |
 | comment | 感想 | あぁ^～心がぴょんぴょんするんじゃぁ^～ |
-| rating | レーティング | 4.5 |
+| rating | **[非推奨]** 旧レーティング。今後は `rating_state` を使用してください。 | 4.5 |
+| rating_state | レーティングの種類。`bad`, `good`, `great` が入力できます。 | great |
 | share_twitter | 記録をTwitterにシェアするかどうか。`true` または `false` が入力できます。指定しなかったときは `false` (シェアしない) になります。 | true |
 | share_facebook | 記録をFacebookにシェアするかどうか。`true` または `false` が入力できます。指定しなかったときは `false` (シェアしない) になります。 | true |
 
@@ -18,7 +19,7 @@
 ## リクエスト例
 
 ```
-$ curl -X POST https://api.annict.com/v1/me/records?episode_id=5013&comment=あぁ^～心がぴょんぴょんするんじゃぁ^～&access_token=(access_token)
+$ curl -X POST "https://api.annict.com/v1/me/records?episode_id=5013&comment=あぁ^～心がぴょんぴょんするんじゃぁ^～&access_token=(access_token)"
 ```
 
 ```json
@@ -83,7 +84,8 @@ $ curl -X POST https://api.annict.com/v1/me/records?episode_id=5013&comment=あ�
 | --- | --- | --- |
 | id | **[必須]** 記録ID | 1016 |
 | comment | 感想 | あぁ^～心がぴょんぴょんするんじゃぁ^～ |
-| rating | レーティング | 5.0 |
+| rating | **[非推奨]** 旧レーティング。今後は `rating_state` を使用してください。 | 4.5 |
+| rating_state | レーティングの種類。`bad`, `good`, `great` が入力できます。 | great |
 | share_twitter | 記録をTwitterにシェアするかどうか。`true` または `false` が入力できます。指定しなかったときは `false` (シェアしない) になります。 | true |
 | share_facebook | 記録をFacebookにシェアするかどうか。`true` または `false` が入力できます。指定しなかったときは `false` (シェアしない) になります。 | true |
 
@@ -91,7 +93,7 @@ $ curl -X POST https://api.annict.com/v1/me/records?episode_id=5013&comment=あ�
 ## リクエスト例
 
 ```
-$ curl -X PATCH https://api.annict.com/v1/me/records/1016?comment=あぁ^～心がぴょんぴょんするんじゃぁ^～&rating=5.0&share_facebook=true&access_token=(access_token)
+$ curl -X PATCH "https://api.annict.com/v1/me/records/1016?comment=あぁ^～心がぴょんぴょんするんじゃぁ^～&share_facebook=true&access_token=(access_token)"
 ```
 
 ```json
@@ -160,7 +162,7 @@ $ curl -X PATCH https://api.annict.com/v1/me/records/1016?comment=あぁ^～心�
 ## リクエスト例
 
 ```
-$ curl -X DELETE https://api.annict.com/v1/me/records/1016?access_token=(access_token)
+$ curl -X DELETE "https://api.annict.com/v1/me/records/1016?access_token=(access_token)"
 ```
 
 ```
