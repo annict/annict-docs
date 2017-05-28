@@ -11,7 +11,7 @@
 | episode_id | **[必須]** エピソードID | 1234 |
 | comment | 感想 | あぁ^～心がぴょんぴょんするんじゃぁ^～ |
 | rating | **[非推奨]** 旧レーティング。今後は `rating_state` を使用してください。 | 4.5 |
-| rating_state | レーティングの種類。`bad`, `good`, `great` が入力できます。 | great |
+| rating_state | レーティングの種類。`bad` `average` `good` `great` が入力できます。 | great |
 | share_twitter | 記録をTwitterにシェアするかどうか。`true` または `false` が入力できます。指定しなかったときは `false` (シェアしない) になります。 | true |
 | share_facebook | 記録をFacebookにシェアするかどうか。`true` または `false` が入力できます。指定しなかったときは `false` (シェアしない) になります。 | true |
 
@@ -85,7 +85,7 @@ $ curl -X POST "https://api.annict.com/v1/me/records?episode_id=5013&comment=あ
 | id | **[必須]** 記録ID | 1016 |
 | comment | 感想 | あぁ^～心がぴょんぴょんするんじゃぁ^～ |
 | rating | **[非推奨]** 旧レーティング。今後は `rating_state` を使用してください。 | 4.5 |
-| rating_state | レーティングの種類。`bad`, `good`, `great` が入力できます。 | great |
+| rating_state | レーティングの種類。`bad` `average` `good` `great` が入力できます。 | great |
 | share_twitter | 記録をTwitterにシェアするかどうか。`true` または `false` が入力できます。指定しなかったときは `false` (シェアしない) になります。 | true |
 | share_facebook | 記録をFacebookにシェアするかどうか。`true` または `false` が入力できます。指定しなかったときは `false` (シェアしない) になります。 | true |
 

@@ -6,4 +6,6 @@
 
 #### GOOD
 
+#### AVERAGE
+
 #### BAD

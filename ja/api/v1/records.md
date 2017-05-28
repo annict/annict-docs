@@ -9,7 +9,7 @@
 | id | 記録ID |
 | comment | 記録したときに書かれた感想 |
 | rating | **[非推奨]** 記録したときに付けられたレーティング。`0` から `5` までの数値が入っています。今後は `rating_state` を参照して下さい。 |
-| rating_state | 記録したときに付けられたレーティング。`bad`, `good`, `great` の3種類が入っています。 |
+| rating_state | 記録したときに付けられたレーティング。`bad` `average` `good` `great` の4種類が入っています。 |
 | is_modified | この記録が編集されたかどうか |
 | likes_count | Likeされた数 |
 | comments_count | コメントされた数 |
