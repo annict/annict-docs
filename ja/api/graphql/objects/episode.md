@@ -13,7 +13,9 @@
 
 #### nextEpisode: [String](/api/graphql/objects/episode.md)
 
-#### number: [String](/api/graphql/scalars/string.md)
+#### number: [Int](/api/graphql/scalars/int.md)
+
+#### numberText: [String](/api/graphql/scalars/string.md)
 
 #### prevEpisode: [String](/api/graphql/objects/episode.md)
 
