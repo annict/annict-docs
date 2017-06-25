@@ -13,6 +13,8 @@
 
 #### avatarUrl: [String](/api/graphql/scalars/string.md)
 
+#### backgroundImageUrl: [String](/api/graphql/scalars/string.md)
+
 #### createdAt: [DateTime](/api/graphql/scalars/date-time.md)!
 
 #### description: [String](/api/graphql/scalars/string.md)!

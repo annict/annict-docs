@@ -7,7 +7,7 @@
 
 ## Fields
 
-#### annictId: [Int](/api/graphql/scalars/int.md)!
+#### annictId: [Int](/api/graphql/scalars/int.md)
 
 #### facebookOgImageUrl: [String](/api/graphql/scalars/string.md)
 
@@ -23,4 +23,4 @@
 
 #### twitterNormalAvatarUrl: [String](/api/graphql/scalars/string.md)
 
-#### work: [Work](/api/graphql/objects/work.md)!
+#### work: [Work](/api/graphql/objects/work.md)
