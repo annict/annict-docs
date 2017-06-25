@@ -11,7 +11,10 @@
 
 #### episodes: [EpisodeConnection](/api/graphql/objects/episode-connection.md)
 
+#### reviews: [ReviewConnection](/api/graphql/objects/review-connection.md)
+
 #### episodesCount: [Int](/api/graphql/scalars/int.md)!
+#### reviewsCount: [Int](/api/graphql/scalars/int.md)!
 
 #### id: [ID](/api/graphql/scalars/id.md)!
 
@@ -46,3 +49,5 @@
 #### wikipediaUrl: [String](/api/graphql/scalars/string.md)
 
 #### wikipediaUrlEn: [String](/api/graphql/scalars/string.md)
+
+#### noEpisodes: [Boolean](/api/graphql/scalars/boolean.md)!
