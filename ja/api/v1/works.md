@@ -25,6 +25,8 @@ Annictに登録されている作品情報を取得することができます�
 | images.recommended_url | `facebook.og_image_url`, `twitter.bigger_avatar_url`, `twitter.image_url` のうち、解像度が一番大きい画像のURL。扱いやすい画像のURLが高確率で格納されるプロパティになります |
 | episodes_count | エピソード数 |
 | watchers_count | 見てる / 見たい / 見た人の数 |
+| reviews_count | レビュー数 |
+| no_episodes | エピソードが存在しない作品かどうか。例えば映画はエピソードが存在しない作品なので、`true` になります |
 
 ## パラメータ
 

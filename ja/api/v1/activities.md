@@ -25,6 +25,13 @@
 | record | 記録情報。取得できるフィールドは [Records](records.md) と同じです。 |
 
 
+### status: create_review
+
+| 名前 | 概要 |
+| --- | --- |
+| review | レビュー情報。取得できるフィールドは [Reviews](reviews.md) と同じです。 |
+
+
 ### status: create_multiple_records
 
 | 名前 | 概要 |
