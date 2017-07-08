@@ -14,6 +14,13 @@ Annictに登録されているユーザ情報を取得することができま�
 | avatar_url | アバター画像 |
 | background_image_url | 背景画像 |
 | records_count | 記録数 |
+| followings_count | ユーザがフォローしている人の数 |
+| followers_count | ユーザをフォローしている人の数 |
+| wanna_watch_count | ステータスを「見たい」にしている作品の数 |
+| watching_count | ステータスを「見てる」にしている作品の数 |
+| watched_count | ステータスを「見た」にしている作品の数 |
+| on_hold_count | ステータスを「中断」にしている作品の数 |
+| stop_watching_count | ステータスを「中止」にしている作品の数 |
 | created_at | ユーザ登録した日時 |
 
 

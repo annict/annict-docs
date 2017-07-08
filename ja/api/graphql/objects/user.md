@@ -23,9 +23,13 @@
 
 #### followers: [UserConnection](/api/graphql/objects/user-connection.md)
 
+#### followersCount: [Int](/api/graphql/scalars/int.md)!
+
 #### following: [UserConnection](/api/graphql/objects/user-connection.md)
 
 #### followingActivities: [ActivityConnection](/api/graphql/objects/activity-connection.md)
+
+#### followingCount: [Int](/api/graphql/scalars/int.md)!
 
 #### id: [ID](/api/graphql/scalars/id.md)!
 
@@ -33,9 +37,13 @@
 
 #### notificationsCount: [Int](/api/graphql/scalars/int.md)
 
+#### onHoldCount: [Int](/api/graphql/scalars/int.md)!
+
 #### programs: [ProgramConnection](/api/graphql/objects/program-connection.md)
 
 #### recordsCount: [Int](/api/graphql/scalars/int.md)!
+
+#### stopWatchingCount: [Int](/api/graphql/scalars/int.md)!
 
 #### url: [String](/api/graphql/scalars/string.md)
 
@@ -44,5 +52,11 @@
 #### viewerCanFollow: [Boolean](/api/graphql/scalars/boolean.md)!
 
 #### viewerIsFollowing: [Boolean](/api/graphql/scalars/boolean.md)!
+
+#### wannaWatchCount: [Int](/api/graphql/scalars/int.md)!
+
+#### watchedCount: [Int](/api/graphql/scalars/int.md)!
+
+#### watchingCount: [Int](/api/graphql/scalars/int.md)!
 
 #### works: [WorkConnection](/api/graphql/objects/work-connection.md)
