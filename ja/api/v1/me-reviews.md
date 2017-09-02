@@ -9,7 +9,7 @@
 | 名前 | 概要 | データ例 |
 | --- | --- | --- |
 | work_id | **[必須]** 作品ID | 3994 |
-| title | **[必須]** タイトル | あぁ^～心がぴょんぴょんするんじゃぁ^～ |
+| title | **[非推奨]** タイトル。現在このプロパティに入力された文字列は感想にマージされます。 | あぁ^～心がぴょんぴょんするんじゃぁ^～ |
 | body | **[必須]** 感想 | 僕は、リゼちゃん！◯（ ´∀｀ ）◯ |
 | rating_animation_state | **[必須]** レーティング (映像)。`bad` `average` `good` `great` が入力できます。 | great |
 | rating_music_state | **[必須]** レーティング (音楽)。`bad` `average` `good` `great` が入力できます。 | great |
@@ -29,8 +29,8 @@ $ curl -X POST "https://api.annict.com/v1/me/reviews?work_id=3994&title=あぁ^�
 ```json
 {
     "id": 595,
-    "title": "あぁ^～心がぴょんぴょんするんじゃぁ^～",
-    "body": "みんなかわいい",
+    "title": "",
+    "body": "あぁ^～心がぴょんぴょんするんじゃぁ^～\n\nみんなかわいい",
     "rating_animation_state": "good",
     "rating_music_state": "good",
     "rating_story_state": "good",
