@@ -11,11 +11,11 @@
 | work_id | **[必須]** 作品ID | 3994 |
 | title | **[非推奨]** タイトル。現在このプロパティに入力された文字列は感想にマージされます。 | あぁ^～心がぴょんぴょんするんじゃぁ^～ |
 | body | **[必須]** 感想 | 僕は、リゼちゃん！◯（ ´∀｀ ）◯ |
-| rating_animation_state | **[必須]** レーティング (映像)。`bad` `average` `good` `great` が入力できます。 | great |
-| rating_music_state | **[必須]** レーティング (音楽)。`bad` `average` `good` `great` が入力できます。 | great |
-| rating_story_state | **[必須]** レーティング (ストーリー)。`bad` `average` `good` `great` が入力できます。 | great |
-| rating_character_state | **[必須]** レーティング (キャラクター)。`bad` `average` `good` `great` が入力できます。 | great |
-| rating_overall_state | **[必須]** レーティング (全体)。`bad` `average` `good` `great` が入力できます。 | great |
+| rating_animation_state | レーティング (映像)。`bad` `average` `good` `great` が入力できます。 | great |
+| rating_music_state | レーティング (音楽)。`bad` `average` `good` `great` が入力できます。 | great |
+| rating_story_state | レーティング (ストーリー)。`bad` `average` `good` `great` が入力できます。 | great |
+| rating_character_state | レーティング (キャラクター)。`bad` `average` `good` `great` が入力できます。 | great |
+| rating_overall_state | レーティング (全体)。`bad` `average` `good` `great` が入力できます。 | great |
 | share_twitter | 記録をTwitterにシェアするかどうか。`true` または `false` が入力できます。指定しなかったときは `false` (シェアしない) になります。 | true |
 | share_facebook | 記録をFacebookにシェアするかどうか。`true` または `false` が入力できます。指定しなかったときは `false` (シェアしない) になります。 | true |
 
