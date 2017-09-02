@@ -7,7 +7,7 @@
 | 名前 | 概要 |
 | --- | --- |
 | id | レビューID |
-| title | レビュータイトル |
+| title | **[非推奨]** レビュータイトル |
 | body | レビュー本文 |
 | rating_animation_state | レビューしたときに付けられたレーティング (作画)。`bad` `average` `good` `great` の4種類のうち1つが入っています。 |
 | rating_music_state | レビューしたときに付けられたレーティング (音楽)。`bad` `average` `good` `great` の4種類のうち1つが入っています。 |
