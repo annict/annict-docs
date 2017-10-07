@@ -9,6 +9,14 @@
 
 #### activities: [ActivityConnection](/api/graphql/objects/activity-connection.md)
 
+| 引数 | 型 | 概要 |
+| --- | --- | --- |
+| first | [Int](/api/graphql/scalars/int.md) | 最初のn件取得する |
+| after | [String](/api/graphql/scalars/string.md) | 指定したIDより後の要素を取得する |
+| last | [Int](/api/graphql/scalars/int.md) | 最後のn件取得する |
+| before | [String](/api/graphql/scalars/string.md) | 指定したIDより前の要素を取得する |
+| orderBy | [WorkOrder](/api/graphql/input-objects/activity-order.md) | 並び順 |
+
 #### annictId: [Int](/api/graphql/scalars/int.md)!
 
 #### avatarUrl: [String](/api/graphql/scalars/string.md)
@@ -28,6 +36,14 @@
 #### following: [UserConnection](/api/graphql/objects/user-connection.md)
 
 #### followingActivities: [ActivityConnection](/api/graphql/objects/activity-connection.md)
+
+| 引数 | 型 | 概要 |
+| --- | --- | --- |
+| first | [Int](/api/graphql/scalars/int.md) | 最初のn件取得する |
+| after | [String](/api/graphql/scalars/string.md) | 指定したIDより後の要素を取得する |
+| last | [Int](/api/graphql/scalars/int.md) | 最後のn件取得する |
+| before | [String](/api/graphql/scalars/string.md) | 指定したIDより前の要素を取得する |
+| orderBy | [WorkOrder](/api/graphql/input-objects/activity-order.md) | 並び順 |
 
 #### followingCount: [Int](/api/graphql/scalars/int.md)!
 
