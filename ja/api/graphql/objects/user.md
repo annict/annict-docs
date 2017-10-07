@@ -15,7 +15,7 @@
 | after | [String](/api/graphql/scalars/string.md) | 指定したIDより後の要素を取得する |
 | last | [Int](/api/graphql/scalars/int.md) | 最後のn件取得する |
 | before | [String](/api/graphql/scalars/string.md) | 指定したIDより前の要素を取得する |
-| orderBy | [WorkOrder](/api/graphql/input-objects/activity-order.md) | 並び順 |
+| orderBy | [ActivityOrder](/api/graphql/input-objects/activity-order.md) | 並び順 |
 
 #### annictId: [Int](/api/graphql/scalars/int.md)!
 
@@ -43,7 +43,7 @@
 | after | [String](/api/graphql/scalars/string.md) | 指定したIDより後の要素を取得する |
 | last | [Int](/api/graphql/scalars/int.md) | 最後のn件取得する |
 | before | [String](/api/graphql/scalars/string.md) | 指定したIDより前の要素を取得する |
-| orderBy | [WorkOrder](/api/graphql/input-objects/activity-order.md) | 並び順 |
+| orderBy | [ActivityOrder](/api/graphql/input-objects/activity-order.md) | 並び順 |
 
 #### followingCount: [Int](/api/graphql/scalars/int.md)!
 
