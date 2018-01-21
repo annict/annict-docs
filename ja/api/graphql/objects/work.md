@@ -13,6 +13,8 @@
 
 #### reviews: [ReviewConnection](/api/graphql/objects/review-connection.md)
 
+#### programs: [ProgramConnection](/api/graphql/objects/program-connection.md)
+
 #### episodesCount: [Int](/api/graphql/scalars/int.md)!
 #### reviewsCount: [Int](/api/graphql/scalars/int.md)!
 
