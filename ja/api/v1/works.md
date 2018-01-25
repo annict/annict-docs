@@ -19,6 +19,7 @@ Annictに登録されている作品情報を取得することができます�
 | wikipedia_url | WikipediaのURL |
 | twitter_username | 公式Twitterアカウントのusername |
 | twitter_hashtag | Twitterの作品に関するハッシュタグ |
+| mal_anime_id | MyAnimeListの作品ID |
 | images.facebook.og_image_url | `official_site_url` のページで取得できる `og:image` のURL |
 | images.twitter.(mini/normal/bigger/original)_avatar_url | Twitterアカウントのアバター画像。`mini`, `normal`, `bigger`, `original` の4種類のサイズがあります |
 | images.twitter.image_url | `official_site_url` のページで取得できる `twitter:image` のURL |
@@ -65,6 +66,7 @@ $ curl -X GET https://api.annict.com/v1/works?access_token=(access_token)
       "wikipedia_url": "http://ja.wikipedia.org/wiki/SHIROBAKO",
       "twitter_username": "shirobako_anime",
       "twitter_hashtag": "musani",
+      "mal_anime_id": "25835",
       "images": {
         "recommended_url": "http://shirobako-anime.com/images/ogp.jpg",
         "facebook": {

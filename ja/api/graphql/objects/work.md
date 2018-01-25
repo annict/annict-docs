@@ -44,6 +44,10 @@
 
 #### twitterUsername: [String](/api/graphql/scalars/string.md)
 
+#### malAnimeId: [String](/api/graphql/scalars/string.md)
+
+MyAnimeListの作品ID
+
 #### viewerStatusState: [StatusState](/api/graphql/enums/status-state.md)
 
 #### watchersCount: [Int](/api/graphql/scalars/int.md)!
