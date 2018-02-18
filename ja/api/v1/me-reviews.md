@@ -110,7 +110,7 @@ $ curl -X POST "https://api.annict.com/v1/me/reviews?work_id=3994&title=あぁ^�
 ## リクエスト例
 
 ```
-$ curl -X PATCH "https://api.annict.com/v1/me/reviews/595?title=あぁ^～心がぴょんぴょんするんじゃぁ^～&body=みんなかわいい！！&rating_animation_state=good&rating_music_state=good&rating_story_state=good&rating_character_state=great&rating_overall_state=great&access_token=(access_token)"
+$ curl -X PATCH "https://api.annict.com/v1/me/reviews/595?body=みんなかわいい！！&rating_animation_state=good&rating_music_state=good&rating_story_state=good&rating_character_state=great&rating_overall_state=great&access_token=(access_token)"
 ```
 
 ```json
