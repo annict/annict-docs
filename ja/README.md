@@ -1,6 +1,6 @@
 # Annict Docs (日本語)
 
-Annictの開発に関するドキュメントをまとめています。
+Annictの開発に関するドキュメントをまとめています。GraphQL APIについては [developers.annict.jp](https://developers.annict.jp/) をご参照ください。
 
 ## ドキュメントの編集について
 
