@@ -8,7 +8,7 @@
 | --- | --- |
 | id | レビューID |
 | title | **[非推奨]** レビュータイトル |
-| body | レビュー本文 |
+| body | 感想 |
 | rating_animation_state | レビューしたときに付けられたレーティング (作画)。`bad` `average` `good` `great` の4種類のうち1つが入っています。 |
 | rating_music_state | レビューしたときに付けられたレーティング (音楽)。`bad` `average` `good` `great` の4種類のうち1つが入っています。 |
 | rating_story_state | レビューしたときに付けられたレーティング (ストーリー)。`bad` `average` `good` `great` の4種類のうち1つが入っています。 |
@@ -28,6 +28,7 @@
 | fields | レスポンスボディに含まれるデータのフィールドを絞り込みます。 | fields=id,title |
 | filter_ids | レビューをレビューIDで絞り込みます。 | filter_ids=1,2,3 |
 | filter_work_id | レビューを作品IDで絞り込みます。 | filter_work_id=1111 |
+| filter_has_review_body | レビューを感想のあるなしで絞り込みます。感想付きのレビューのみに絞り込むときは `true` を、感想の無い記録のみに絞り込むときは `false` を指定します。| filter_has_review_body=true |
 | page | ページ数を指定します。 | page=2 |
 | per_page | 1ページに何件取得するかを指定します。デフォルトは `25` 件で、`50` 件まで指定できます。 | per_page=30 |
 | sort_id | レビューをレビューIDで並び替えます。`asc` または `desc` が指定できます。 | sort_id=desc |
