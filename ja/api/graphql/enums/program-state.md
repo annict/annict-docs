@@ -1,7 +1,0 @@
-# ProgramState
-
-## Values
-
-#### PUBLISHED
-
-#### HIDDEN

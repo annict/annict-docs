@@ -1,7 +1,0 @@
-# OrderDirection
-
-## Values
-
-#### ASC
-
-#### DESC

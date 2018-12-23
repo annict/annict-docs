@@ -1,5 +1,0 @@
-# ActivityAction
-
-## Values
-
-#### CREATE
