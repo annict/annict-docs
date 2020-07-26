@@ -38,7 +38,7 @@
 ## リクエスト例
 
 ```
-$ curl -X GET https://api.annict.com/v1/records?filter_work_id=3994&access_token=(access_token)
+$ curl -X GET https://api.annict.com/v1/reviews?filter_work_id=3994&access_token=(access_token)
 ```
 
 ```json
